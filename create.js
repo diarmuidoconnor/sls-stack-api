@@ -35,6 +35,7 @@ export function main(event, context, callback) {
 
     // Return status code 500 on error
     if (error) {
+      console.log(error);
       const response = {
         statusCode: 500,
         headers: headers,
